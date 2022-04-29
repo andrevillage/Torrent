@@ -1,5 +1,5 @@
 {
-  "name": "Tele-LeechX",
+  "name": "TorrentLeechX",
   "description": "A Powerful Telegram Torrent (and YouTube-DL) Leecher based on Pyrogram. Powered by @FuZionX and @FuZionXLeech",
   "logo": "https://telegra.ph/file/8abf8d2addb8f4d982d8a.jpg",
   "keywords": [
@@ -96,6 +96,10 @@
       "value": "300",
       "required": false
     },
+    "MAX_TG_SPLIT_FILE_SIZE": {
+      "description": "should be an integer. Number of seconds to Wait before Cancelling a torrent.",
+      "value": "2097152000"
+    },
     "FINISHED_PROGRESS_STR": {
       "description": "Should be a Single Character. Get any Cool Icon.",
       "required": false
@@ -127,18 +131,57 @@
       "description": "Enter your index link:",
       "required": false
     },
+    "DEF_THUMB_NAIL_VID_S": {
+      "description": "Enter your telegra.ph photo link:",
+      "required": false
+    },
     "YTDL_COMMAND": {
       "description": "Enter your custom ytdl command like ytdl1@botname and so on. Default is /ytdl.",
-      "value": "ytdl",
+      "value": "ytdlp",
       "required": false
     },
     "PYTDL_COMMAND": {
       "description": "Enter your custom pytdl command like pytdl1@botname and so on. Default is /pytdl.",
-      "value": "pytdl",
+      "value": "pytdlp",
       "required": false
     },
     "GET_SIZE_G": {
       "description": "Enter your custom getsize command like getsize@urgroupname and so on. Default is /getsize.",
+      "required": false
+    },
+    "GLEECH_COMMAND": {
+      "description": "-",
+      "value": "gleech",
+      "required": false
+    },
+    "HELP_COMMAND": {
+      "description": "-",
+      "value": "help",
+      "required": false
+    },
+    "TSEARCH_COMMAND": {
+      "description": "-",
+      "value": "tsearch",
+      "required": false
+    },
+    "RENEWME_COMMAND": {
+      "description": "-",
+      "value": "renewme",
+      "required": false
+    },
+    "GYTDL_COMMAND": {
+      "description": "-",
+      "value": "gytdl",
+      "required": false
+    },
+    "CLONE_COMMAND_G": {
+      "description": "-",
+      "value": "clone",
+      "required": false
+    },
+    "UPLOAD_COMMAND": {
+      "description": "-",
+      "value": "upload",
       "required": false
     },
     "RCLONE_CONFIG": {
@@ -160,3 +203,4 @@
     }
   },
   "stack": "container"
+}
